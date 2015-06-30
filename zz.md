@@ -8,7 +8,7 @@ permalink: /about/
 
 Neque porro *quisquam* est, qui **dolorem** ipsum, quia ***dolor*** sit, amet, [consectetur](http://cjdns.info/), adipisci velit.
 
- * lorem
+ * lorem  孙立杰 的 博客
  * ipsum
 
 1. dolor
