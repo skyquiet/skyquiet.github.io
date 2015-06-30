@@ -1,5 +1,5 @@
 ---
-title:  "Me"
+title:  "About Me"
 date:   2014-09-10 22:37:00
 permalink: /about/
 ---
