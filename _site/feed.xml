@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog title</title>
-    <description>Really cool blog about ... something</description>
+    <title>天空的安静</title>
+    <description>anything interesting</description>
     <link></link>
     <atom:link href="feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 30 Jun 2015 15:26:41 +0800</pubDate>
-    <lastBuildDate>Tue, 30 Jun 2015 15:26:41 +0800</lastBuildDate>
+    <pubDate>Tue, 30 Jun 2015 16:48:07 +0800</pubDate>
+    <lastBuildDate>Tue, 30 Jun 2015 16:48:07 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
