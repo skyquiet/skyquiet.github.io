@@ -5,8 +5,8 @@
     <description>anything interesting</description>
     <link></link>
     <atom:link href="feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 05 Jul 2015 08:46:42 +0800</pubDate>
-    <lastBuildDate>Sun, 05 Jul 2015 08:46:42 +0800</lastBuildDate>
+    <pubDate>Sun, 05 Jul 2015 09:34:38 +0800</pubDate>
+    <lastBuildDate>Sun, 05 Jul 2015 09:34:38 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -14,10 +14,13 @@
         <description>&lt;p&gt;&lt;strong&gt;快速排序&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;快速排序使用&lt;code&gt;分治法&lt;/code&gt;来设计算法。&lt;/li&gt;
+  &lt;li&gt;快速排序使用&lt;strong&gt;分治法&lt;/strong&gt;来设计算法。&lt;/li&gt;
   &lt;li&gt;拆分是快速排序的核心。&lt;/li&gt;
-  &lt;li&gt;快速排序的最坏运行时间是O(n2)，但期望的运行时间是O(nlgn)。&lt;/li&gt;
+  &lt;li&gt;快速排序的最坏运行时间是&lt;strong&gt;O(n2)&lt;/strong&gt;，但期望的运行时间是&lt;strong&gt;O(nlgn)&lt;/strong&gt;。&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;图形表示&lt;/strong&gt;
+&lt;img src=&quot;http://pic002.cnblogs.com/images/2012/401709/2012090309575126.png&quot; alt=&quot;快速排序&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Code&lt;/strong&gt;&lt;/p&gt;
 
@@ -76,7 +79,6 @@
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;cm&quot;&gt;/**&lt;/span&gt;
 &lt;span class=&quot;cm&quot;&gt;     * 打印数字数组&lt;/span&gt;
-&lt;span class=&quot;cm&quot;&gt;     *&lt;/span&gt;
 &lt;span class=&quot;cm&quot;&gt;     * @param data&lt;/span&gt;
 &lt;span class=&quot;cm&quot;&gt;     */&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
