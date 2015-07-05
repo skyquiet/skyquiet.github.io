@@ -6,9 +6,12 @@ categories: arithmetic
 
 **快速排序**
 
-* 快速排序使用`分治法`来设计算法。
+* 快速排序使用**分治法**来设计算法。
 * 拆分是快速排序的核心。
-* 快速排序的最坏运行时间是O(n2)，但期望的运行时间是O(nlgn)。
+* 快速排序的最坏运行时间是**O(n2)**，但期望的运行时间是**O(nlgn)**。
+
+**图形表示**
+![快速排序](http://pic002.cnblogs.com/images/2012/401709/2012090309575126.png)
 
 **Code**
 
@@ -69,7 +72,6 @@ public class Sort {
     }
     /**
      * 打印数字数组
-     *
      * @param data
      */
     public static void print(int[] data) {
