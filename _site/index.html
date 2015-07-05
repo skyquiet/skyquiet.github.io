@@ -30,6 +30,95 @@
     
     <article>
       <header>
+        <h2><a href="/arithmetic/2014/10/02/quickSort.html">快速排序</a></h2>
+        <p><time datetime="2014-10-02T06:00:00+08:00">Oct 2, 2014</time> • arithmetic</p>
+      </header>
+      <div>
+<p><strong>快速排序</strong></p>
+
+<ul>
+  <li>快速排序使用<code>分治法</code>来设计算法。</li>
+  <li>拆分是快速排序的核心。</li>
+  <li>快速排序的最坏运行时间是O(n2)，但期望的运行时间是O(nlgn)。</li>
+</ul>
+
+<p><strong>Code</strong></p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * 快速排序</span>
+<span class="cm"> * Created by Sun on 2014/10/01.</span>
+<span class="cm"> */</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Sort</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">array</span> <span class="o">=</span> <span class="o">{</span><span class="mi">8</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">6</span><span class="o">,</span> <span class="mi">7</span><span class="o">,</span> <span class="mi">9</span><span class="o">,</span> <span class="mi">12</span><span class="o">,</span> <span class="mi">11</span><span class="o">,</span> <span class="mi">23</span><span class="o">,</span> <span class="mi">44</span><span class="o">,</span> <span class="mi">66</span><span class="o">};</span>
+        <span class="n">QuickSort</span><span class="o">(</span><span class="n">array</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">9</span><span class="o">);</span>
+        <span class="n">print</span><span class="o">(</span><span class="n">array</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="cm">/**</span>
+<span class="cm">     * 快速排序</span>
+<span class="cm">     * @param data</span>
+<span class="cm">     * @param low</span>
+<span class="cm">     * @param high</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">QuickSort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">data</span><span class="o">,</span> <span class="kt">int</span> <span class="n">low</span><span class="o">,</span> <span class="kt">int</span> <span class="n">high</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">low</span> <span class="o">&lt;</span> <span class="n">high</span><span class="o">)</span> <span class="o">{</span>
+            <span class="kt">int</span> <span class="n">pivot</span> <span class="o">=</span> <span class="n">partition</span><span class="o">(</span><span class="n">data</span><span class="o">,</span> <span class="n">low</span><span class="o">,</span> <span class="n">high</span><span class="o">);</span>
+            <span class="n">QuickSort</span><span class="o">(</span><span class="n">data</span><span class="o">,</span> <span class="n">low</span><span class="o">,</span> <span class="n">pivot</span> <span class="o">-</span> <span class="mi">1</span><span class="o">);</span>
+            <span class="n">QuickSort</span><span class="o">(</span><span class="n">data</span><span class="o">,</span> <span class="n">pivot</span> <span class="o">+</span> <span class="mi">1</span><span class="o">,</span> <span class="n">high</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="cm">/**</span>
+<span class="cm">     * 获取中间的值的位置</span>
+<span class="cm">     * @param data</span>
+<span class="cm">     * @param low</span>
+<span class="cm">     * @param high</span>
+<span class="cm">     * @return</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">partition</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">data</span><span class="o">,</span> <span class="kt">int</span> <span class="n">low</span><span class="o">,</span> <span class="kt">int</span> <span class="n">high</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">data</span><span class="o">[</span><span class="n">low</span><span class="o">];</span>
+        <span class="k">while</span> <span class="o">(</span><span class="n">low</span> <span class="o">&lt;</span> <span class="n">high</span><span class="o">)</span> <span class="o">{</span>
+            <span class="c1">//右边的值比tmp大</span>
+            <span class="k">while</span> <span class="o">(</span><span class="n">low</span> <span class="o">&lt;</span> <span class="n">high</span> <span class="o">&amp;&amp;</span> <span class="n">data</span><span class="o">[</span><span class="n">high</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">tmp</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">high</span><span class="o">--;</span>
+            <span class="o">}</span>
+            <span class="c1">//出现右边的值不小于tmp的时候进行互换</span>
+            <span class="n">data</span><span class="o">[</span><span class="n">low</span><span class="o">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">[</span><span class="n">high</span><span class="o">];</span>
+            <span class="c1">//然后从左边继续挨个比较，保持左边的值比tmp小，否则跳出循环</span>
+            <span class="k">while</span> <span class="o">(</span><span class="n">low</span> <span class="o">&lt;</span> <span class="n">high</span> <span class="o">&amp;&amp;</span> <span class="n">data</span><span class="o">[</span><span class="n">low</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">tmp</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">low</span><span class="o">++;</span>
+            <span class="o">}</span>
+            <span class="c1">//执行到这里意味着出现左边的值比tmp大，进行互换</span>
+            <span class="n">data</span><span class="o">[</span><span class="n">high</span><span class="o">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">[</span><span class="n">low</span><span class="o">];</span>
+            <span class="c1">//如果tmp还有没与全部的值比较一遍，则low &lt; high ，进入下一次循环</span>
+        <span class="o">}</span>
+        <span class="c1">//全部比较一遍之后，其实low == high，把tmp填入此中间位置</span>
+        <span class="n">data</span><span class="o">[</span><span class="n">low</span><span class="o">]</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">;</span>
+        <span class="k">return</span> <span class="n">low</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="cm">/**</span>
+<span class="cm">     * 打印数字数组</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param data</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">data</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">data</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">+</span> <span class="s">&quot;  &quot;</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;&quot;</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></div>
+
+
+      </div>
+      <footer>
+        <p><a href="/arithmetic/2014/10/02/quickSort.html">read more &raquo;</a></p>
+      </footer>
+    </article>
+    
+    <article>
+      <header>
         <h2><a href="/example/2014/09/11/example.html">Example</a></h2>
         <p><time datetime="2014-09-11T06:37:00+08:00">Sep 11, 2014</time> • example</p>
       </header>

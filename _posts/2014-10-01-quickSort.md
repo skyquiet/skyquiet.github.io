@@ -21,19 +21,11 @@ import org.junit.Test;
  * Created by Sun on 2014/10/01.
  */
 public class Sort {
-
     public static void main(String[] args) {
-
-
         int[] array = {8, 5, 6, 7, 9, 12, 11, 23, 44, 66};
-
         QuickSort(array, 0, 9);
-
         print(array);
-
     }
-
-
     /**
      * 快速排序
      * @param data
@@ -47,7 +39,6 @@ public class Sort {
             QuickSort(data, pivot + 1, high);
         }
     }
-
     /**
      * 获取中间的值的位置
      * @param data
@@ -56,35 +47,26 @@ public class Sort {
      * @return
      */
     public static int partition(int[] data, int low, int high) {
-
         int tmp = data[low];
         while (low < high) {
-
             //右边的值比tmp大
             while (low < high && data[high] > tmp) {
                 high--;
             }
-
             //出现右边的值不小于tmp的时候进行互换
             data[low] = data[high];
-
             //然后从左边继续挨个比较，保持左边的值比tmp小，否则跳出循环
             while (low < high && data[low] < tmp) {
                 low++;
             }
-
             //执行到这里意味着出现左边的值比tmp大，进行互换
             data[high] = data[low];
-
             //如果tmp还有没与全部的值比较一遍，则low < high ，进入下一次循环
-
         }
         //全部比较一遍之后，其实low == high，把tmp填入此中间位置
         data[low] = tmp;
-
         return low;
     }
-
     /**
      * 打印数字数组
      *
@@ -96,7 +78,6 @@ public class Sort {
         }
         System.out.println("");
     }
-
 }
 
 {% endhighlight %}
