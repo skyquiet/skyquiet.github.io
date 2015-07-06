@@ -9,8 +9,8 @@
     <title>天空的安静</title>
     <link rel="canonical" href="/index.html">
     <link href="/main.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='//fonts.useso.com/css?family=Gentium+Basic:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.lug.ustc.edu.cn/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.lug.ustc.edu.cn/css?family=Gentium+Basic:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
     <link rel="alternate" type="application/rss+xml" title="天空的安静 &raquo; Feed" href="/feed.xml">
     
@@ -30,6 +30,44 @@
     
     <article>
       <header>
+        <h2><a href="/arithmetic/2014/10/02/quickSort.html">Quick Sort</a></h2>
+        <p><time datetime="2014-10-02T06:00:00+08:00">Oct 2, 2014</time> • arithmetic</p>
+      </header>
+      <div>
+<p><strong>快速排序</strong></p>
+
+<ul>
+  <li>快速排序使用<strong>分治法</strong>来设计算法。</li>
+  <li>拆分是快速排序的核心。</li>
+  <li>快速排序的最坏运行时间是<strong>O(n2)</strong>，但期望的运行时间是<strong>O(nlgn)</strong>。</li>
+</ul>
+
+
+      </div>
+      <footer>
+        <p><a href="/arithmetic/2014/10/02/quickSort.html">read more &raquo;</a></p>
+      </footer>
+    </article>
+    
+    <article>
+      <header>
+        <h2><a href="/arithmetic/2014/09/23/bubbleSort.html">Bubble Sort</a></h2>
+        <p><time datetime="2014-09-23T05:05:00+08:00">Sep 23, 2014</time> • arithmetic</p>
+      </header>
+      <div>
+<p><strong>冒泡排序</strong></p>
+
+<p>冒泡排序（Bubble Sort）是一种简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。</p>
+
+
+      </div>
+      <footer>
+        <p><a href="/arithmetic/2014/09/23/bubbleSort.html">read more &raquo;</a></p>
+      </footer>
+    </article>
+    
+    <article>
+      <header>
         <h2><a href="/example/2014/09/11/example.html">Example</a></h2>
         <p><time datetime="2014-09-11T06:37:00+08:00">Sep 11, 2014</time> • example</p>
       </header>
@@ -37,49 +75,6 @@
 <p><strong>Basic</strong></p>
 
 <p>Neque porro <em>quisquam</em> est, qui <strong>dolorem</strong> ipsum, quia <strong><em>dolor</em></strong> sit, amet, <a href="http://cjdns.info/">consectetur</a>, adipisci velit.</p>
-
-<ul>
-  <li>lorem</li>
-  <li>ipsum</li>
-</ul>
-
-<ol>
-  <li>dolor</li>
-  <li>sit</li>
-</ol>
-
-<table>
-  <thead>
-    <tr>
-      <th>First Header</th>
-      <th>Second Header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Table Cell</td>
-      <td>Table Cell</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Blockquote</strong></p>
-
-<blockquote>
-  <p>They who can give up essential liberty to obtain a little temporary safety, deserve neither liberty nor safety.</p>
-
-  <p><em>Benjamin Franklin</em></p>
-</blockquote>
-
-<p><strong>Code</strong></p>
-
-<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="k">static</span> <span class="kt">void</span> <span class="nf">asyncEnabled</span><span class="p">(</span><span class="n">Dict</span><span class="o">*</span> <span class="n">args</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">vAdmin</span><span class="p">,</span> <span class="n">String</span><span class="o">*</span> <span class="n">txid</span><span class="p">,</span> <span class="k">struct</span> <span class="n">Allocator</span><span class="o">*</span> <span class="n">requestAlloc</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">struct</span> <span class="n">Admin</span><span class="o">*</span> <span class="n">admin</span> <span class="o">=</span> <span class="n">Identity_check</span><span class="p">((</span><span class="k">struct</span> <span class="n">Admin</span><span class="o">*</span><span class="p">)</span> <span class="n">vAdmin</span><span class="p">);</span>
-    <span class="kt">int64_t</span> <span class="n">enabled</span> <span class="o">=</span> <span class="n">admin</span><span class="o">-&gt;</span><span class="n">asyncEnabled</span><span class="p">;</span>
-    <span class="n">Dict</span> <span class="n">d</span> <span class="o">=</span> <span class="n">Dict_CONST</span><span class="p">(</span><span class="n">String_CONST</span><span class="p">(</span><span class="s">&quot;asyncEnabled&quot;</span><span class="p">),</span> <span class="n">Int_OBJ</span><span class="p">(</span><span class="n">enabled</span><span class="p">),</span> <span class="nb">NULL</span><span class="p">);</span>
-    <span class="n">Admin_sendMessage</span><span class="p">(</span><span class="o">&amp;</span><span class="n">d</span><span class="p">,</span> <span class="n">txid</span><span class="p">,</span> <span class="n">admin</span><span class="p">);</span>
-<span class="p">}</span></code></pre></div>
 
 
       </div>
