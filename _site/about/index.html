@@ -35,49 +35,17 @@
       <div>
 <p><strong>Basic</strong></p>
 
-<p>Neque porro <em>quisquam</em> est, qui <strong>dolorem</strong> ipsum, quia <strong><em>dolor</em></strong> sit, amet, <a href="http://cjdns.info/">consectetur</a>, adipisci velit.</p>
-
-<ul>
-  <li>lorem  孙立杰 的 博客</li>
-  <li>ipsum</li>
-</ul>
-
-<ol>
-  <li>dolor</li>
-  <li>sit</li>
-</ol>
-
-<table>
-  <thead>
-    <tr>
-      <th>First Header</th>
-      <th>Second Header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Table Cell</td>
-      <td>Table Cell</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Blockquote</strong></p>
-
-<blockquote>
-  <p>They who can give up essential liberty to obtain a little temporary safety, deserve neither liberty nor safety.</p>
-
-  <p><em>Benjamin Franklin</em></p>
-</blockquote>
+<p>PHP、Java programmer.</p>
 
 <p><strong>Code</strong></p>
 
-<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="k">static</span> <span class="kt">void</span> <span class="nf">asyncEnabled</span><span class="p">(</span><span class="n">Dict</span><span class="o">*</span> <span class="n">args</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">vAdmin</span><span class="p">,</span> <span class="n">String</span><span class="o">*</span> <span class="n">txid</span><span class="p">,</span> <span class="k">struct</span> <span class="n">Allocator</span><span class="o">*</span> <span class="n">requestAlloc</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">struct</span> <span class="n">Admin</span><span class="o">*</span> <span class="n">admin</span> <span class="o">=</span> <span class="n">Identity_check</span><span class="p">((</span><span class="k">struct</span> <span class="n">Admin</span><span class="o">*</span><span class="p">)</span> <span class="n">vAdmin</span><span class="p">);</span>
-    <span class="kt">int64_t</span> <span class="n">enabled</span> <span class="o">=</span> <span class="n">admin</span><span class="o">-&gt;</span><span class="n">asyncEnabled</span><span class="p">;</span>
-    <span class="n">Dict</span> <span class="n">d</span> <span class="o">=</span> <span class="n">Dict_CONST</span><span class="p">(</span><span class="n">String_CONST</span><span class="p">(</span><span class="s">&quot;asyncEnabled&quot;</span><span class="p">),</span> <span class="n">Int_OBJ</span><span class="p">(</span><span class="n">enabled</span><span class="p">),</span> <span class="nb">NULL</span><span class="p">);</span>
-    <span class="n">Admin_sendMessage</span><span class="p">(</span><span class="o">&amp;</span><span class="n">d</span><span class="p">,</span> <span class="n">txid</span><span class="p">,</span> <span class="n">admin</span><span class="p">);</span>
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="p">{</span>
+    <span class="s">&quot;sex&quot;</span><span class="o">:</span><span class="s">&quot;male&quot;</span><span class="p">,</span>
+    <span class="s">&quot;age&quot;</span><span class="o">:</span><span class="s">&quot;29&quot;</span><span class="p">,</span>
+    <span class="s">&quot;name&quot;</span><span class="o">:</span><span class="s">&quot;孙立杰&quot;</span> <span class="p">,</span>
+    <span class="s">&quot;email&quot;</span><span class="o">:</span><span class="s">&quot;362377865@qq.com&quot;</span><span class="p">,</span>
+    <span class="s">&quot;address&quot;</span><span class="o">:</span><span class="s">&quot;北京&quot;</span><span class="p">,</span>
+    <span class="s">&quot;phone&quot;</span><span class="o">:</span><span class="s">&quot;10086&quot;</span>
 <span class="p">}</span></code></pre></div>
 
 
