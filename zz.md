@@ -15,7 +15,6 @@ PHP、Java programmer.
 
 {
     "sex":"male",
-    "age":"29",
     "name":"孙立杰" ,
     "email":"362377865@qq.com",
     "address":"北京",
