@@ -41,14 +41,11 @@ Digital root  有时候也用来做检验和。
 
 **不能使用循环、递归，算法的时间复杂度需要为O(1).**
 
-
 *提示*
-
 
 1. 所有可能的结果，会是什么？
 2. 这些结果，是有规律的，还是随机的？
 3. 看看wiki的这个文章：[Digital root](https://en.wikipedia.org/wiki/Digital_root#Congruence_formula)
-
 
 **Code**
 
