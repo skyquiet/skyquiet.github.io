@@ -39,7 +39,7 @@ Digital root  有时候也用来做检验和。
 *提示*
 1.所有可能的结果，会是什么？
 2.这些结果，是有规律的，还是随机的？
-3.看看wiki的这个文章：[igital root](https://en.wikipedia.org/wiki/Digital_root#Congruence_formula)
+3.看看wiki的这个文章：[Digital root](https://en.wikipedia.org/wiki/Digital_root#Congruence_formula)
 
 
 **Code**
