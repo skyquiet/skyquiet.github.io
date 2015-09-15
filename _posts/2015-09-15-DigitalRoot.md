@@ -74,7 +74,7 @@ public static void main(String[] args) {
 
 //        addDigits(58967867);
 
-
+//这里可以看到，当你输入0-100的数字的时候，结果会呈现周期性的规律
 for (int i = 0; i <100 ; i++) {
    int res =  addDigits2(i);
     System.out.print(" "+res);
