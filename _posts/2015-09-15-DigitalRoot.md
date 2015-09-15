@@ -4,7 +4,9 @@ date:   2015-09-15 11:42:00
 categories: arithmetic
 ---
 
-在刷LeetCode的时候遇到一道关于Digital Root 的题。在wiki上看了Digital Root 的相关资料，现在用自己的话翻译、总结一下。
+    在刷LeetCode的时候遇到一道关于Digital Root 的题。在wiki上看了Digital Root 的相关资料，现在用自己的话翻译、总结一下。
+
+
 
 *介绍*
 
