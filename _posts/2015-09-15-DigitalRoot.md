@@ -151,3 +151,31 @@ public static int addDigits3(int num) {
 }
 
 {% endhighlight %}
+
+**Congruence formula**
+
+如果你能看到这里，好吧，我再来说一下公式的推倒：
+
+* dr(n) = 0 if n = 0,
+* dr(n) = 9 if n ≠ 0,n ≡ 0 (mod 9),
+* dr(n) = n mod 9 if n ≡/ (不恒等) 0 (mod 9)
+
+总结成一个通用的公式为：`dr(n) = 1 + (n-1)%9 `.
+
+所以这道题就简化为了，直接套用上面的公式。时间复杂度为O(1);
+
+另：
+
+* 10 ≡ 1 (mod 9),从而，10^k ≡ 1^k ≡ 1 (mod 9)
+  
+* so : a · 100 ≡ a ·10 ≡ a (mod 9)
+  
+* dr(abc) ≡ a · 10^2 + b · 10 + c ≡ a · 1 + b · 1 + c ·1 = a + b + c (mod 9)
+   
+* so : dr(abc) = abc mod 9 if abc   ≠ 0.
+  
+  
+
+
+
+
