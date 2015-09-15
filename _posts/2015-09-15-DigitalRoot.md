@@ -69,69 +69,58 @@ package LeetCode;
  * Created by Sun on 2015/9/14.
  */
 public class AddDigits {
-
-public static void main(String[] args) {
-
-//这里可以看到，当你输入0-100的数字的时候，结果会呈现周期性的规律
-for (int i = 0; i <100 ; i++) {
-   int res =  addDigits2(i);
-    System.out.print(" "+res);
-}
-
-}
-
-/**
- * 把数字转成字符串，再分割
- * @param num
- * @return
- */
-public static int addDigits(int num) {
-
-//判断边界值
-String str = Integer.toString(num);
-String s[] = str.split("");
-int r = 0;
-//i从1开始，是因为 0会是""
-for (int i = 1; i < s.length; i++) {
-    System.out.println(Integer.parseInt(s[i]));
-    r += Integer.parseInt(s[i]);
-}
-
-if (r >= 10) {
-    addDigits(r);
-}
-return r;
-}
-
-/**
- * 略微好看点咯
- * @param num
- * @return
- */
-public static int addDigits2(int num) {
-
-if (num >= 0 && num <= 9) {
-    return num;
-}
-
-int sum = 0;
-while (num > 0) {
-    sum += num % 10;
-    num = num / 10;
-}
-
-return addDigits2(sum);
-}
-
-/**
- * 然后发现有digital roots 这种东西
- * @param num
- * @return
- * @see <a href="https://en.wikipedia.org/wiki/Digital_root#Congruence_formula">digital roots </a>
- */
-public static int addDigits3(int num) {
-    return 1 + (num - 1) % 1;
-}
+    public static void main(String[] args) {
+    //这里可以看到，当你输入0-100的数字的时候，结果会呈现周期性的规律
+        for (int i = 0; i <100 ; i++) {
+           int res =  addDigits2(i);
+            System.out.print(" "+res);
+        }
+    }
+    /**
+     * 把数字转成字符串，再分割
+     * @param num
+     * @return
+     */
+    public static int addDigits(int num) {
+        //判断边界值
+        String str = Integer.toString(num);
+        String s[] = str.split("");
+        int r = 0;
+        //i从1开始，是因为 0会是""
+        for (int i = 1; i < s.length; i++) {
+            System.out.println(Integer.parseInt(s[i]));
+            r += Integer.parseInt(s[i]);
+        }
+        if (r >= 10) {
+            addDigits(r);
+        }
+        return r;
+    }
+    /**
+     * 略微好看点咯
+     * @param num
+     * @return
+     */
+    public static int addDigits2(int num) {
+        if (num >= 0 && num <= 9) {
+            return num;
+        }
+        int sum = 0;
+        while (num > 0) {
+            sum += num % 10;
+            num = num / 10;
+        }
+        return addDigits2(sum);
+    }
+    /**
+     * 然后发现有digital roots 这种东西
+     * @param num
+     * @return
+     * @see <a href="https://en.wikipedia.org/wiki/Digital_root#Congruence_formula">digital roots </a>
+     */
+    public static int addDigits3(int num) {
+        return 1 + (num - 1) % 1;
+    }
 
 }
 
