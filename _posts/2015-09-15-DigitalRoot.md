@@ -4,13 +4,9 @@ date:   2015-09-15 11:42:00
 categories: arithmetic
 ---
 
-**Basic**
-
 在刷LeetCode的时候遇到一道关于Digital Root 的题。在wiki上看了Digital Root 的相关资料，现在用自己的话翻译、总结一下。
 
-
-**介绍**
-
+*介绍*
 
 Digital Root  就是一个非负整数，把它的不同位的值相加，得到的结果再继续相加，重复这个操作，直到结果为个位数。
 
@@ -21,13 +17,13 @@ Digital roots 可以根据周期性的规律来计算出结果，这样能避免
 Digital root  有时候也用来做检验和。
 
 
-**题目**
+*题目*
 
 
 给定一个非负的int型整数，然后不断的把它不同的位上的数字相加，直到最后的结果为个位数。
 
 
-**举例**
+*举例*
 
 
 给定的数字为38，过程如下：
@@ -36,7 +32,7 @@ Digital root  有时候也用来做检验和。
 结果为2.
 
 
-**注意**
+*注意*
 
 
 **不能使用循环、递归，算法的时间复杂度需要为O(1).**
@@ -47,7 +43,7 @@ Digital root  有时候也用来做检验和。
 2. 这些结果，是有规律的，还是随机的？
 3. 看看wiki的这个文章：[Digital root](https://en.wikipedia.org/wiki/Digital_root#Congruence_formula)
 
-**Code**
+*Code*
 
 {% highlight java %}
 package LeetCode;
