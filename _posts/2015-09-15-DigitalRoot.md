@@ -4,28 +4,28 @@ date:   2015-09-15 11:42:00
 categories: arithmetic
 ---
 
-在刷`LeetCode`的时候遇到一道关于`Digital Root`的题。在wiki上看了`Digital Root`的相关资料，现在用自己的话翻译、总结一下。
+在刷`LeetCode`的时候遇到一道关于`Digital Root`的题。在wiki上看了相关资料，现在用自己的话翻译、总结一下。
 
 
 
-`介绍`
+*介绍*
 
-`Digital Root` 就是一个非负整数，把它的不同位的值相加，得到的结果再继续相加，重复这个操作，直到结果为个位数。
+Digital Root  就是一个非负整数，把它的不同位的值相加，得到的结果再继续相加，重复这个操作，直到结果为个位数。
 
-举例来说，65,536 的 `Digital Root` 为7，因为  6 + 5 + 5 + 3 + 6 = 25 , 2 + 5 = 7.
+举例来说，65,536 的 digital root 为7，因为  6 + 5 + 5 + 3 + 6 = 25 , 2 + 5 = 7.
 
-`Digital Root`可以根据周期性的规律来计算出结果，这样能避免使用常规的循环、递归等来计算结果，用做算法的话，能节省大量时间，提高性能。
+Digital roots 可以根据周期性的规律来计算出结果，这样能避免使用常规的循环、递归等来计算结果，用做算法的话，能节省大量时间，提高性能。
 
-`Digital Root`有时候也用来做检验和。
-
-
-`题目`
+Digital root  有时候也用来做检验和。
 
 
-给定一个非负的`int`型整数，然后不断的把它不同的位上的数字相加，直到最后的结果为个位数。
+*题目*
 
 
-`举例`
+给定一个非负的int型整数，然后不断的把它不同的位上的数字相加，直到最后的结果为个位数。
+
+
+*举例*
 
 
 给定的数字为38，过程如下：
@@ -34,12 +34,12 @@ categories: arithmetic
 结果为2.
 
 
-`注意`
+*注意*
 
 
-`不能使用循环、递归，算法的时间复杂度需要为O(1).`
+**不能使用循环、递归，算法的时间复杂度需要为O(1).**
 
-`提示`
+*提示*
 
 1. 所有可能的结果，会是什么？
 2. 这些结果，是有规律的，还是随机的？
@@ -72,17 +72,11 @@ public class AddDigits {
 
 public static void main(String[] args) {
 
-//        addDigits(58967867);
-
 //这里可以看到，当你输入0-100的数字的时候，结果会呈现周期性的规律
 for (int i = 0; i <100 ; i++) {
    int res =  addDigits2(i);
     System.out.print(" "+res);
 }
-
-
-//        System.out.println(addDigits(1000));
-
 
 }
 
@@ -94,27 +88,19 @@ for (int i = 0; i <100 ; i++) {
 public static int addDigits(int num) {
 
 //判断边界值
-
 String str = Integer.toString(num);
-System.out.println(str);
-
 String s[] = str.split("");
-
 int r = 0;
-
 //i从1开始，是因为 0会是""
 for (int i = 1; i < s.length; i++) {
     System.out.println(Integer.parseInt(s[i]));
     r += Integer.parseInt(s[i]);
 }
 
-
 if (r >= 10) {
     addDigits(r);
 }
-System.out.println("end : " + r);
 return r;
-
 }
 
 /**
@@ -122,7 +108,6 @@ return r;
  * @param num
  * @return
  */
-
 public static int addDigits2(int num) {
 
 if (num >= 0 && num <= 9) {
@@ -152,7 +137,7 @@ public static int addDigits3(int num) {
 
 {% endhighlight %}
 
-`Congruence formula`
+**Congruence formula**
 
 如果你能看到这里，好吧，我再来说一下公式的推倒：
 
@@ -162,7 +147,7 @@ public static int addDigits3(int num) {
 
 总结成一个通用的公式为：`dr(n) = 1 + (n-1)%9 `.
 
-所以这道题就简化为了，直接套用上面的公式。时间复杂度为O(1);
+所以这道题就简化为了，直接套用上面的公式。时间复杂度为`O(1)`;
 
 另：
 
