@@ -107,7 +107,7 @@ class MySort
      */
     public static function quickSort(&$arr, $start, $end)
     {
-        echo "---->".$start."--->".$end."\n";
+        echo "---->".$start."--->".$end.""\n<br>"";
         if (empty($arr) || $start > $end) {
             return;
         }
