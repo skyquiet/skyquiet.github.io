@@ -55,13 +55,13 @@ public class Sort {
         int tmp = data[low];
         while (low < high) {
             //右边的值比tmp大
-            while (low < high && data[high] > tmp) {
+            while (low < high && data[high] >= tmp) {
                 high--;
             }
             //出现右边的值不小于tmp的时候进行互换
             data[low] = data[high];
             //然后从左边继续挨个比较，保持左边的值比tmp小，否则跳出循环
-            while (low < high && data[low] < tmp) {
+            while (low < high && data[low] <= tmp) {
                 low++;
             }
             //执行到这里意味着出现左边的值比tmp大，进行互换
