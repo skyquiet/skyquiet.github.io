@@ -15,11 +15,9 @@ categories: arithmetic
 **图形表示**
 ![快速排序](http://pic002.cnblogs.com/images/2012/401709/2012090309575126.png)
 
-**Code**
+**Code Java**
 
 {% highlight java %}
-
-import org.junit.Test;
 
 /**
  * 快速排序
@@ -83,5 +81,63 @@ public class Sort {
         System.out.println("");
     }
 }
+
+{% endhighlight %}
+
+**Code PHP**
+
+{% highlight PHP %}
+
+<?php
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: Sun
+ * Date: 2015/11/12
+ * Time: 16:12
+ */
+class MySort
+{
+    /**
+     * 先来个快速排序
+     * @param $arr
+     * @param $Start
+     * @param $end
+     * @return mixed
+     */
+    public static function quickSort(&$arr, $start, $end)
+    {
+        echo "---->".$start."--->".$end."\n";
+        if (empty($arr) || $start > $end) {
+            return;
+        }
+        $t = self::part($arr, $start, $end);
+        self::quickSort($arr, $start, $t - 1);
+        self::quickSort($arr, $start + 1, $end);
+    }
+    public static function part(&$arr, $low, $high)
+    {
+        $tmp = $arr[$low];
+        while ($low < $high) {
+            while ($low < $high && $tmp <= $arr[$high]) {
+                $high--;
+            }
+            //swap
+            $arr[$low] = $arr[$high];
+            while ($low < $high && $tmp >= $arr[$low]) {
+                $low++;
+            }
+            $arr[$high] = $arr[$low];
+        }
+        $arr[$low] = $tmp;
+        return $low;
+    }
+}
+
+echo "start ---------------->";
+$arr = array(2, 77, 334, 4,2, 5, 6);
+
+MySort::quickSort($arr, 0, count($arr)-1);
+var_dump($arr);
 
 {% endhighlight %}
