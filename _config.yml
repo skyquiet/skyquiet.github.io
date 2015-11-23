@@ -7,8 +7,8 @@ url: ""
 baseurl: "" # comment out if in root directory
 
 comments:
-    disqus: "skyquiet"
-#    disqus: "niklasbuschmann"
+#    disqus: "skyquiet"
+    disqus: "niklasbuschmann"
     isso: "cdn.bootcss.com/flowplayer/5.4.6"
 #    isso: "comments.mysite.org"
 
