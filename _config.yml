@@ -8,8 +8,8 @@ baseurl: "" # comment out if in root directory
 
 comments:
     disqus: "skyquiet"
-    #isso: "comments.mysite.org"
-    isso: "skyquiet.github.io"
+    isso: "comments.mysite.org"
+#    isso: "skyquiet.github.io"
 
 style:
 #    body: "whitesmoke"
