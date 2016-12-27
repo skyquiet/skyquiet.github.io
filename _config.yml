@@ -20,8 +20,8 @@ subtitle: "A free HTML5 agency template"
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 # baseurl: "/" # the subpath of your site
-url: "http://skyquiet.github.io" # the base hostname & protocol for your site
-baseurl: "/blog"
+url: "http://skyquiet.github.io/blog" # the base hostname & protocol for your site
+baseurl: "/"
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
