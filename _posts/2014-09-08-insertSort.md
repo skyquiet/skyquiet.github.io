@@ -10,7 +10,7 @@ categories: arithmetic
 
 **Code**
 
-{% highlight java %}
+{% highlight ruby %}
 
 /**
  * 插入排序

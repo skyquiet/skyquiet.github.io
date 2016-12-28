@@ -48,7 +48,7 @@ Digital root  有时候也用来做检验和。
 
 `Code`
 
-{% highlight java %}
+{% highlight ruby %}
 package LeetCode;
 
 /**
