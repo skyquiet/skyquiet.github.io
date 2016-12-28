@@ -21,7 +21,7 @@ categories: arithmetic
 
 **Code**
 
-{% highlight ruby %}
+{% highlight java %}
 /**
  * 冒泡排序
  * 1.一共需要n-1次外循环

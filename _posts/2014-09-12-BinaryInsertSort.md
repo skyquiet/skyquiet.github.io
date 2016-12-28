@@ -10,7 +10,7 @@ categories: arithmetic
 
 **Code**
 
-{% highlight ruby %}
+{% highlight java %}
 
    /**
      * 二分插入是在直接插入排序基础上的改良

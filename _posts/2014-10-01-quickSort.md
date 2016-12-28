@@ -18,7 +18,7 @@ categories: arithmetic
 
 **Code Java**
 
-{% highlight ruby %}
+{% highlight java %}
 
 /**
  * 快速排序
@@ -87,7 +87,7 @@ public class Sort {
 
 **Code PHP**
 
-{% highlight ruby %}
+{% highlight php %}
 
 <?php
 
