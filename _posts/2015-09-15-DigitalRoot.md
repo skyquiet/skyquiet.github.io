@@ -148,6 +148,9 @@ public class AddDigits {
 * dr(abc) ≡ a · 10^2 + b · 10 + c ≡ a · 1 + b · 1 + c ·1 = a + b + c (mod 9)
    
 * so : dr(abc) = abc mod 9 if abc   ≠ 0.
+
+
+![赞赏...](/img/WechatIMG1.jpeg)
   
   
 
