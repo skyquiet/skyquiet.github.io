@@ -150,7 +150,7 @@ public class AddDigits {
 * so : dr(abc) = abc mod 9 if abc   ≠ 0.
 
 
-![赞赏...](/img/WechatIMG1.jpeg)
+![赞赏...](https://github.com/skyquiet/skyquiet.github.io/blob/master/img/WechatIMG1.jpeg)
   
   
 
