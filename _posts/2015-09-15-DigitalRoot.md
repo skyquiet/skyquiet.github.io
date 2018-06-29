@@ -149,8 +149,8 @@ public class AddDigits {
    
 * so : dr(abc) = abc mod 9 if abc   ≠ 0.
 
-
-![赞赏...](/img/WechatIMG1.jpeg)
+-------------------
+![赞赏...](/img/qr/WechatIMG1.jpeg)
   
   
 
