@@ -1,4 +1,3 @@
-
 exclude:
   - "/vendor/"
   - "Gemfile"
@@ -14,7 +13,7 @@ keep_files:
 
 
 # Site settings
-title: Ìì¿ÕµÄ°²¾²
+title: learn
 subtitle: "blog"
 # Base URL of site. It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
