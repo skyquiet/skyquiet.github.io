@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9277154e-ee94-471f-9634-bde22e9eb83f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PS.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2014-05-08-changeVar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2014-09-08-insertSort.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2014-09-12-BinaryInsertSort.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2014-09-22-bubbleSort.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2014-10-01-quickSort.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2015-09-15-DigitalRoot.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2016-05-20-my-example-post.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2016-05-20-this-post-demonstrates-post-content-styles.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/airspace-jekyll.gemspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/airspace.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/ionicons.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/syntax.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ionicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ionicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ionicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ionicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/call-to-action-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/clients/clients-logo-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/clients/clients-logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/clients/clients-logo10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/clients/clients-logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/clients/clients-logo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/clients/clients-logo4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/clients/clients-logo5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/clients/clients-logo6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/clients/clients-logo7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/clients/clients-logo8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cotation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/featue-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/item-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/portfolio/work1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/portfolio/work2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/portfolio/work3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/portfolio/work4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/portfolio/work5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/portfolio/work6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/qr/WechatIMG1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/slider-bg-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/slider-bg-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/slider-bg-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/slider-bg-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/slider-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/wrapper-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.counterup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/min/main.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/min/plugins.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/min/waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/jquery-1.10.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/modernizr-2.6.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/blog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/homecropped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/homecroppedscaled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="old" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="dxmj9yrq" />
+  </component>
+  <component name="ProjectId" id="1qpALcYnq1RwmYVgGLIrER2AsPE" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="options.lastSelected" value="preferences.sourceCode.Other Languages" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9277154e-ee94-471f-9634-bde22e9eb83f" name="Default Changelist" comment="" />
+      <created>1617766102307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617766102307</updated>
+      <workItem from="1617766103819" duration="2950000" />
+    </task>
+    <task id="LOCAL-00001" summary="modify">
+      <created>1617778849320</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617778849320</updated>
+    </task>
+    <task id="LOCAL-00002" summary="backup">
+      <created>1617779063123</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617779063123</updated>
+    </task>
+    <task id="LOCAL-00003" summary="reset">
+      <created>1617779132522</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617779132522</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modify" />
+    <MESSAGE value="backup" />
+    <MESSAGE value="reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="reset" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="429" y="128" key="CommitChangelistDialog2" timestamp="1617779062967">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="429" y="128" key="CommitChangelistDialog2/-78.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1617779062967" />
+    <state x="440" y="243" key="Vcs.Push.Dialog.v2" timestamp="1617779065300">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="243" key="Vcs.Push.Dialog.v2/-78.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1617779065300" />
+    <state x="541" y="264" width="598" height="522" key="find.popup" timestamp="1617778823763">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="541" y="264" width="598" height="522" key="find.popup/-78.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1617778823763" />
+  </component>
+</project>
